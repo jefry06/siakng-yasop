@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  root 'v1/session#login'
+  namespace :v1 do
+  get 'session/login'
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

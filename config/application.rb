@@ -20,6 +20,20 @@ module SiakngYasop
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
+    config.assets.paths << Rails.root.join("app", "assets", "fonts")
+    config.assets.paths << Rails.root.join("app", "assets", "img", "avatars")
+    config.assets.paths << Rails.root.join("app", "assets", "img", "logos")
+    config.assets.paths << Rails.root.join("app", "assets", "img", "plugins")
+    config.assets.paths << Rails.root.join("app", "assets", "img", "patterns")
+    config.assets.paths << Rails.root.join("app", "assets", "img", "patterns", "backgrounds")
+    config.assets.paths << Rails.root.join("app", "assets", "img", "sprites")
+    config.assets.paths << Rails.root.join("app", "assets", "img", "stock")
+    config.assets.paths << Rails.root.join("app", "assets", "img", "stock", "products")
+
+    config.assets.paths << Rails.root.join("app", "assets", "js", "*")
+    config.assets.paths << Rails.root.join("app", "assets", "skin", "default_skin", "css")
+    config.assets.paths << Rails.root.join("app", "assets", "admin-tools", "admin-forms", "css")
+
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
   end
